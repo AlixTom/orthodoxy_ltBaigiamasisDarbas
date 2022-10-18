@@ -33,6 +33,8 @@ public static class Orthodoxy_lt{
         public static By buttonFilter = By.xpath("//a[@id='start_filtering']");
         public static By buttonClear = By.xpath("//div[@class = 'filter-buttons']/span/a[2]");
         public static By buttonSearch = By.xpath("//*[@id='startsearch']/span/span");
+
+        public static By buttonNavigateHome = By.xpath("//*[@id='top-nav']//h2");
     }
 
 }

@@ -29,4 +29,12 @@ public class MonastyriSearchTestPage {
 
     }
 
+    public static void clickButtonNavigateHome() {
+        Common.clickElementByAction(Locators.Orthodoxy_lt.Buttons.buttonNavigateHome);
+
+    }
+
+    public static String readCurrentUrl(){
+       return Common.checkUrl();
+    }
 }

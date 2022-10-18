@@ -23,10 +23,6 @@ public class Common {
         Driver.getDriver().get(url);
     }
 
-    public static void closeDriver() {
-        Driver.close();
-    }
-
     public static void sleep(int millis) {
         try {
             Thread.sleep(millis);
@@ -133,5 +129,10 @@ public class Common {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(8));
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 
+    }
+    public static String checkUrl() {
+
+        String currentURL = Driver.getDriver().getCurrentUrl();
+        return currentURL;
     }
 }

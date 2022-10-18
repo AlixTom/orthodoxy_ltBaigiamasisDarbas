@@ -33,7 +33,22 @@ public class MonastyriSearchTest extends TestBase {
                         expectedMessage
                 )
         );
+    }
 
+    @Test
+    private void navigateHomeButtonTest(){
+       String expectedUrl = "https://www.orthodoxy.lt/";
+       String actualUrl = "";
+
+       MonastyriSearchTestPage.clickButtonNavigateHome();
+        actualUrl = MonastyriSearchTestPage.readCurrentUrl();
+        Assert.assertTrue(actualUrl.equals(expectedUrl),
+                String.format(
+                        "Actual [%s]; Expected [%s]",
+                        actualUrl,
+                        expectedUrl
+                )
+        );
 
     }
 }
