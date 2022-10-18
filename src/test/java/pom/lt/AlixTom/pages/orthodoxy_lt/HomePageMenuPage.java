@@ -3,7 +3,7 @@ package pom.lt.AlixTom.pages.orthodoxy_lt;
 import pom.lt.AlixTom.pages.Common;
 import pom.lt.AlixTom.pages.Locators;
 
-public class Orthodoxy_ltHomeMenuPage {
+public class HomePageMenuPage {
 
     public static void open(String url) {
         Common.openUrl(url);
