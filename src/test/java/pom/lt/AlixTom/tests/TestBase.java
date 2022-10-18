@@ -15,10 +15,10 @@ public class TestBase {
         Common.setUpDriver();
     }
 
-//    @AfterMethod
-//    public void tearDown() {
-      //       Common.sleep(3000);
-//        Common.closeDriver();
-//    }
+    @AfterMethod
+    public void tearDown() {
+        Common.sleep(3000);
+        Common.closeDriver();
+    }
 
 }

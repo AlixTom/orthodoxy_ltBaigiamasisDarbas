@@ -16,7 +16,6 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult result) {
-        // ctr + I
         takeScreenshot();
     }
 
@@ -25,7 +24,6 @@ public class TestListener implements ITestListener {
         TakesScreenshot takesScreenshot = (TakesScreenshot) Driver.getDriver();
         File screenshotRaw = takesScreenshot.getScreenshotAs(OutputType.FILE);
 
-//        String directory = "C:\\1_Lectures\\VCS\\01_Classwork\\test";
         String directory = "./screenshots";
 
         LocalDateTime localDateTime = LocalDateTime.now();
