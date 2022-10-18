@@ -10,7 +10,6 @@ public class NovostiFilterPage {
 
     public static void open(String url) {
         Common.openUrl(url);
-        Common.sleep(3000);
     }
 
     public static void inputTexttoTextBox(String boxInput, int key) {

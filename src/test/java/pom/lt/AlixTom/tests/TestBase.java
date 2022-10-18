@@ -17,6 +17,7 @@ public class TestBase {
 
 //    @AfterMethod
 //    public void tearDown() {
+      //       Common.sleep(3000);
 //        Common.closeDriver();
 //    }
 
