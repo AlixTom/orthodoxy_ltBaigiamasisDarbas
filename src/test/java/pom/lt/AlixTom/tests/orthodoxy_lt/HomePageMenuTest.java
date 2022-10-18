@@ -4,15 +4,15 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import pom.lt.AlixTom.pages.orthodoxy_lt.Orthodoxy_ltHomeMenuPage;
+import pom.lt.AlixTom.pages.orthodoxy_lt.HomePageMenuPage;
 import pom.lt.AlixTom.tests.TestBase;
 
-public class Orthodoxy_ltHomeMenuTest extends TestBase {
+public class HomePageMenuTest extends TestBase {
     @BeforeMethod
     @Override
     public void setUp() {
         super.setUp();
-        Orthodoxy_ltHomeMenuPage.open("https://www.orthodoxy.lt/");
+        HomePageMenuPage.open("https://www.orthodoxy.lt/");
 
     }
     @DataProvider(name = "menueItems", parallel = true)
@@ -32,8 +32,8 @@ public class Orthodoxy_ltHomeMenuTest extends TestBase {
     private void testMenu(String text, Integer key) {
         String expectedMessage = text;
         String actualMessage = "";
-        Orthodoxy_ltHomeMenuPage.clickMenuButtonToOpenPage(key);
-        actualMessage = Orthodoxy_ltHomeMenuPage.readMessage(key);
+        HomePageMenuPage.clickMenuButtonToOpenPage(key);
+        actualMessage = HomePageMenuPage.readMessage(key);
 
         Assert.assertTrue(
                 actualMessage.equals(expectedMessage),
