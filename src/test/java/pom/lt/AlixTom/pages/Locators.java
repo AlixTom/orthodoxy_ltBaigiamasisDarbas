@@ -21,6 +21,17 @@ public static class Orthodoxy_lt{
 
     }
 
+    public static class TextBox{
+        public static By inputContainer01 = By.xpath("//input[@id='filter_from_date']");
+        public static By inputContainer02 = By.xpath("//input[@id='filter_until_date']");
+        public static By paragraphMessage = By.xpath("//div[@id='filteringMessage']");
+    }
+    public static class Buttons {
+
+        public static By buttonFilter = By.xpath("//a[@id='start_filtering']");
+        public static By buttonClear = By.xpath("//div[@class = 'filter-buttons']/span/a[2]");
+    }
+
 }
 
 }

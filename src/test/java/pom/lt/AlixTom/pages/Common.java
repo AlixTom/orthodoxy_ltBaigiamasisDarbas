@@ -132,5 +132,6 @@ public class Common {
     public static void waitForElementWithVisibilityChange(By locator) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(8));
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+
     }
 }
